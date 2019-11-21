@@ -1,0 +1,20 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cucumber": "^6.0.0",
+    "cucumber": "^6.0.5",
+    "gherkin-testcafe": "^2.4.2",
+    "testcafe": "^1.6.1",
+    "axe-core": "^3.4.0",
+    "axe-testcafe": "^3.0.0",
+    "typescript": "^3.7.2"
+  }
+}
