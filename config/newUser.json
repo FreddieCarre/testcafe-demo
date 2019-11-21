@@ -1,0 +1,11 @@
+{
+    "gender": "Male",
+    "firstName": "Test",
+    "lastName": "Tester",
+    "password": "Password",
+    "address": "Leeds Road",
+    "city": "Leeds",
+    "state": "Alabama",
+    "zip": "12345",
+    "mobile": "0123456789"
+}
