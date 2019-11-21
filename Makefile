@@ -1,3 +1,6 @@
+init:
+	yarn install
+
 cucumber:
 	./node_modules/.bin/gherkin-testcafe chrome step_definitions/*.ts features/*.feature
 
