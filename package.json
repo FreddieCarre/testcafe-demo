@@ -4,17 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome tests/"
+    "test": "testcafe chrome tests/",
+    "remote": "testcafe remote tests/",
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@types/cucumber": "^6.0.0",
-    "cucumber": "^6.0.5",
-    "gherkin-testcafe": "^2.4.2",
-    "testcafe": "^1.6.1",
     "axe-core": "^3.4.0",
     "axe-testcafe": "^3.0.0",
+    "cucumber": "^6.0.5",
+    "cypress": "^3.8.1",
+    "gherkin-testcafe": "^2.4.2",
+    "testcafe": "^1.6.1",
     "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "csv-parser": "^2.3.2"
   }
 }

@@ -1,7 +1,6 @@
 import { Selector, t } from 'testcafe';
 import { basePage } from './base.page';
-
-const newUser = require('../config/newUser.json');
+import { User } from '../utils/utils';
 
 export const registrationPage = {
     url: `${basePage.url}/controller=authentication&back=my-account`,
@@ -22,7 +21,8 @@ export const registrationPage = {
     mobile: Selector('input#phone_mobile'),
     registerButton: Selector('button#submitAccount'),
 
-    async registerWithDetails(): Promise<TestControllerPromise> {
+    async registerWithDetails(newUser: any): Promise<TestControllerPromise> {
+        console.log(newUser);
         var genderOpt;
         if (newUser.gender === 'Male') {
             genderOpt = this.mrRadio;
